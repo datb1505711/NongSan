@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagingActivity">
+    <RelativeLayout
+        android:id="@+id/RelativeBack"
+        android:layout_width="match_parent"
+        android:background="@color/topcolor"
+        android:layout_height="55dp">
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:src="@drawable/iconback"
+            android:background="@color/topcolor"
+            android:scaleType="fitXY"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtNamee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="hello"
+            android:textSize="36sp"
+            android:layout_toRightOf="@+id/imgbtnBack"
+            android:layout_marginEnd="32dp"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lstmess"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/RelativeBack"
+        android:background="#ECEFF1"
+        android:layout_above="@+id/edtmessage"
+        android:layout_height="match_parent"></ListView>
+    <EditText
+        android:id="@+id/edtmessage"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung ..."
+        android:layout_margin="16sp"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/btnSend"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        />
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16sp"
+        android:text="Send"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn3"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgBaiviet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ctu"
+        android:layout_margin="8dp"/>
+    <RelativeLayout
+        android:id="@+id/baiVietRelative"
+        android:layout_toRightOf="@id/imgBaiviet"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/txtTieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="Đây là tiêu đề"/>
+
+        <RelativeLayout
+            android:id="@+id/GridbottomRelative"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtThoigian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="12sp"
+                android:text="10 phút trước"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+
+                android:id="@+id/txtGiasanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:text="10.000.000"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/GridbottomRelative"
+            android:layout_below="@+id/txtTieude"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtMota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đây là mô tả"
+                android:textSize="9sp"/>
+            <TextView
+                android:id="@+id/txtTinhthanh"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="Cần thơ"
+                android:layout_width="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/map"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

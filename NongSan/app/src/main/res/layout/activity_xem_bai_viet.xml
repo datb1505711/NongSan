@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XemBaiVietActivity">
+        <RelativeLayout
+            android:id="@+id/TopRelative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_above="@+id/BottomRelative">
+            <RelativeLayout
+            android:id="@+id/children"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/topcolor"
+            android:layout_height="55dp">
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:hint="Tìm kiếm"
+                android:layout_toLeftOf="@id/btnsearch"
+                android:background="@color/topcolor"
+                android:inputType="text"
+                android:focusable="false" />
+             <ImageButton
+                 android:id="@+id/btnsearch"
+                 android:layout_width="55dp"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/iconsearch"
+                 android:scaleType="center"
+                android:layout_toLeftOf="@+id/btnchangeStatus"
+                 android:background="@color/topcolor" />
+            <Button
+                android:id="@+id/btnchangeStatus"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="BÀI MUA"
+                android:textSize="12sp"
+                android:background="@color/topcolor"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/children"
+            >
+                <GridView
+                    android:id="@+id/GridviewBan"
+                    android:numColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </GridView>
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/TopRelative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_above="@+id/BottomRelative">
+            <RelativeLayout
+            android:id="@+id/children2"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/topcolor"
+            android:layout_height="55dp">
+
+                <EditText
+                    android:id="@+id/edtSearch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/topcolor"
+                    android:drawableRight="@drawable/iconsearch"
+                    android:drawablePadding="6dp"
+                    android:focusable="false"
+                    android:hint="Tìm kiếm"
+                    android:inputType="text"
+                    android:padding="16dp" />
+
+        </RelativeLayout>
+
+            <ListView
+                android:id="@+id/ListUser"
+                android:layout_below="@+id/children2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </RelativeLayout>
+
+
+
+
+    <ImageButton
+        android:id="@+id/imgbtnDangbaiviet"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/btn"
+        android:src="@drawable/iconcreate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:visibility="visible"
+        android:layout_marginBottom="80dp"/>
+    <Button
+        android:id="@+id/btnChatwithAdmin"
+        android:text="Chat with Admin"
+        android:background="@drawable/btn3"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imgbtnDangbaiviet"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/BottomRelative"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="#8B9BDF"
+
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+</RelativeLayout>

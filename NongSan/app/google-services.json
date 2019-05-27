@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "377960605142",
+    "firebase_url": "https://nongsan-bc647.firebaseio.com",
+    "project_id": "nongsan-bc647",
+    "storage_bucket": "nongsan-bc647.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377960605142:android:f1594f488cdc15cb",
+        "android_client_info": {
+          "package_name": "thanhdat.example.nongsan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377960605142-qpi4s1ledv808gsk6qrgd06s7lio78dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm4JWq8X2hgcjYZuRO4JzDhakhPE8O-P0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377960605142:android:96249fe721f1c248",
+        "android_client_info": {
+          "package_name": "thanhdat.example.nongsanvn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377960605142-qpi4s1ledv808gsk6qrgd06s7lio78dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm4JWq8X2hgcjYZuRO4JzDhakhPE8O-P0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

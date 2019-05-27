@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/topcolor"
+    tools:context=".DangNhapActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="40sp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:gravity="center_horizontal"/>
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="140dp"
+            android:src="@drawable/ctu"
+            android:layout_height="140dp"
+            android:layout_below="@+id/txtDangNhap"
+            android:layout_margin="16dp"
+            android:layout_centerHorizontal="true"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtinputlayoutdangnhap"
+            android:layout_width="match_parent"
+            android:layout_below="@id/imgLogo"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edtusrname"
+                android:hint="Tài khoản"
+                android:paddingTop="16dp"
+                android:inputType="textAutoComplete"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edtpwd2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtinputlayoutdangnhap"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edtpwd"
+                android:layout_below="@+id/edtusrname"
+                android:hint="Mật khẩu"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:paddingTop="16dp"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnDangnhap"
+            android:text="Đăng nhập"
+            android:background="@drawable/btn"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/edtpwd2"/>
+        <TextView
+            android:id="@+id/txtLinkquenmatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:layout_below="@+id/btnDangnhap"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:linksClickable="true"
+            android:id="@+id/txtLinkdangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo tài khoản mới"
+            android:layout_below="@+id/btnDangnhap"
+            android:layout_marginRight="32sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="32dp"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

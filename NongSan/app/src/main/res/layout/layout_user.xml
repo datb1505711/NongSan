@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/imgAvt"
+        android:layout_margin="5dp"
+        android:layout_width="90dp"
+        android:src="@drawable/iconchat"
+        android:layout_height="90dp"></ImageView>
+    <RelativeLayout
+        android:id="@+id/RelativeUser"
+        android:layout_toRightOf="@+id/imgAvt"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="90dp">
+        <TextView
+            android:id="@+id/txtUSERNAME"
+            android:layout_width="match_parent"
+            android:text="Ten User"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/RelativeUser2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtUSERNAME"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/imageAvt"
+                android:layout_width="48dp"
+                android:src="@drawable/iconchat"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitXY"
+                android:layout_height="48dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

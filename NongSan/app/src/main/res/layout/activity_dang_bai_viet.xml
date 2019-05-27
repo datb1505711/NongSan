@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangBaiVietActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="80dp"
+            >
+
+            <TextView
+                android:id="@+id/txtDangBaiViet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng bài viết"
+                android:textSize="40sp"
+                android:textStyle="italic|bold"
+                android:layout_centerHorizontal="true"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/TIPtieude"
+                android:layout_below="@id/txtDangBaiViet"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edtTieude"
+                    android:hint="Tiêu đề bài viết"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/radGroup"
+                android:layout_below="@id/TIPtieude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại bài viết: "
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/radBan"
+                    android:text="Tin bán"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/radMua"
+                    android:text="Tin Mua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <RelativeLayout
+                android:id="@+id/reltinhthanh"
+                android:layout_below="@id/radGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txttinhthanh"
+                    android:hint="Tỉnh thành: "
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:layout_marginLeft="32dp"
+                    android:id="@+id/spintinhthanh"
+                    android:layout_toRightOf="@+id/TIPgia"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+                <TextView
+                    android:id="@+id/txtDanhmuc"
+                    android:layout_below="@id/txttinhthanh"
+                    android:text="Danh Mục: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:layout_marginLeft="32dp"
+                    android:id="@+id/spindanhmuc"
+                    android:layout_below="@id/txttinhthanh"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/TIPgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TIPgia"
+                    android:layout_below="@id/txtDanhmuc"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Giá sản phẩm"
+                        android:id="@+id/edtGia"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:ems="6"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spingia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_below="@+id/spindanhmuc"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@id/TIPgia"></Spinner>
+            </RelativeLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/TILmotasanpham"
+                android:layout_below="@id/reltinhthanh"
+                android:layout_above="@+id/imgViewbaiviet"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edtmotasanpham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mô tả sản phẩm"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btnImage"
+                android:layout_alignParentBottom="true"
+                android:text="Thêm hình ảnh"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imgViewbaiviet"
+                android:layout_width="150dp"
+                android:scaleType="fitXY"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@+id/btnImage"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/iconno"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btndangbaiviet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:text="Đăng tin"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btnDangbaivietTrove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:text="Trở về"
+        android:textSize="32sp" />
+    <ProgressBar
+        android:id="@+id/prgUpload"
+        android:layout_toRightOf="@id/btndangbaiviet"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="100"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

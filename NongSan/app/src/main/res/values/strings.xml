@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NongSan</string>
+    <string name="home">Bài viết</string>
+    <string name="contact">Liên hệ</string>
+    <string name="notifier">Thông báo</string>
+    <string name="setting">Cài đặt</string>
+    <string name="title_activity_xem_bai_viet">XemBaiVietActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title">NongSan.vn</string>
+</resources>
